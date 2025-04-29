@@ -1,7 +1,9 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.viewsets import ModelViewSet
 
-from .models import Cor
+from core.models import Cor
+from core.serializers.cor import CorSerializer
 
-class CorViewSet(viewsets.ModelViewSet):
-    queryset = Modelo.objects.all()
-    serializer_class = ModeloSerializer
+
+class CorViewSet(ModelViewSet):
+    queryset = Cor.objects.all()
+    serializer_class = CorSerializer

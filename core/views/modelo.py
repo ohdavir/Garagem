@@ -1,7 +1,8 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework.viewsets import ModelViewSet
 
-from .models import Modelo
+from core.models import Modelo
+from core.serializers.modelo import ModeloSerializer
 
-class ModeloViewSet(viewsets.ModelViewSet):
+class ModeloViewSet(ModelViewSet):
     queryset = Modelo.objects.all()
     serializer_class = ModeloSerializer

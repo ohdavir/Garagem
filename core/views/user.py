@@ -7,8 +7,7 @@ from rest_framework.viewsets import ModelViewSet
 from core.models import User
 from core.serializers import UserSerializer
 from rest_framework import viewsets
-from .serializers import AcessorioSerializer
-from .models import Modelo
+
 
 
 class UserViewSet(ModelViewSet):

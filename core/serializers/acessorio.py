@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.models.acessorio import Acessorio
+from core.models import Acessorio
 
 class AcessorioSerializer(ModelSerializer):
     class Meta:
